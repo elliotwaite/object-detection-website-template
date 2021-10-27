@@ -1,0 +1,45 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <script src="https://kit.fontawesome.com/142e920fa1.js" crossorigin="anonymous"></script>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="page">
+    <div class="upper-content">
+
+      <div id="bounding-boxes"></div>
+
+      <div class="video-container">
+        <div id="no-video-icon">
+          <i class="fas fa-video-slash"></i>
+        </div>
+        <video id="video" autoplay></video>
+      </div>
+
+    </div>
+    <div class="button-row">
+
+      <div id="start-button" class="button button-vertical">
+        <div class="button-icon">
+          <i class="fas fa-desktop"></i>
+        </div>
+        <div class="button-label">Share Screen</div>
+      </div>
+
+      <div id="stop-button" class="button button-horizontal">
+        <div class="button-icon">
+          <i class="fas fa-stop"></i>
+        </div>
+        <div class="button-label">Stop Sharing</div>
+      </div>
+
+    </div>
+  </div>
+
+  <canvas id="canvas"></canvas>
+  <script src="script.js"></script>
+</body>
+</html>

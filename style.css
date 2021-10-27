@@ -1,0 +1,151 @@
+*, *:before, *:after {
+  box-sizing: inherit;
+}
+
+html {
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  box-sizing: border-box;
+  height: 100%;
+}
+
+body {
+  margin: 0;
+  height: 100%;
+  color: #212121;
+  font-family: sans-serif;
+}
+
+.page {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+}
+
+.upper-content {
+  flex: 1;
+  overflow: hidden;
+  position: relative;
+}
+
+/* Bounding boxes */
+
+#bounding-boxes {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+}
+
+.bounding-box {
+  position: absolute;
+  border-radius: 0 4px 4px 4px;
+  box-shadow: inset 0 0 0 2px #304FFE;
+}
+
+.bounding-box-label {
+  display: inline-block;
+  position: absolute;
+  top: -22px;
+  padding: 0 6px;
+  line-height: 24px;
+  font-size: 14px;
+  color: white;
+  border-radius: 4px 4px 0 0;
+  background: #304FFE;
+  white-space: nowrap;
+}
+
+.bounding-box-bottom-label {
+  border-radius: 4px 4px 4px 0;
+}
+
+.bounding-box-bottom-label .bounding-box-label {
+  top: auto;
+  bottom: -22px;
+  border-radius: 0 0 4px 4px;
+}
+
+/* Video */
+
+.video-container {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background: #000;
+  overflow: hidden;
+}
+
+#no-video-icon {
+  font-size: 48px;
+  color: #424242;
+}
+
+#video {
+  max-width: 100%;
+  max-height: 100%;
+  display: none;
+}
+
+/* Buttons */
+
+.button-row {
+  padding: 2px;
+  display: flex;
+  justify-content: center;
+  background-color: #212121;
+}
+
+.button {
+  display: flex;
+  align-items: center;
+  border-radius: 8px;
+  padding: 4px 8px;
+  color: #BDBDBD;
+  cursor: pointer;
+}
+
+.button:hover {
+  background-color: #424242;
+}
+
+#start-button {
+  color: #00E676;
+}
+
+#stop-button {
+  color: #FF1744;
+  display: none;
+}
+
+.button-vertical {
+  flex-direction: column;
+}
+
+.button-horizontal {
+  flex-direction: row;
+}
+
+.button-icon {
+  font-size: 18px;
+}
+
+.button-vertical .button-icon {
+  padding-bottom: 4px;
+}
+
+.button-horizontal .button-icon {
+  padding-right: 8px;
+}
+
+.button-label {
+  font-size: 14px;
+}
+
+/* Canvas */
+
+#canvas {
+  display: none;
+}
